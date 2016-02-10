@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="2" display="no" altdistance="0.3175" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="3" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="4" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -31,10 +31,10 @@
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -53,12 +53,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
@@ -85,6 +85,8 @@
 <text x="67.5" y="11" size="1.778" layer="16" font="vector" ratio="20" rot="MR0">MP 2015</text>
 <text x="60" y="44" size="1.778" layer="16" font="vector" ratio="20" distance="30" rot="MR0">LIC_rack_TS
 ext-00</text>
+<text x="165.9" y="-70.8" size="2.54" layer="48">00</text>
+<text x="17" y="72.2" size="5.08" layer="48">Top view</text>
 </plain>
 <libraries>
 <library name="diode">
@@ -328,6 +330,37 @@ Various connectors from GM and SOS
 </package>
 </packages>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+<package name="A4L-LOC">
+<description>&lt;b&gt;FRAME&lt;/b&gt; DIN A4 landscape with doc field</description>
+<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="48"/>
+<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="48"/>
+<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="48"/>
+<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="48"/>
+<wire x1="127" y1="3.81" x2="127" y2="24.13" width="0.1016" layer="48"/>
+<wire x1="127" y1="24.13" x2="193.04" y2="24.13" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="48"/>
+<wire x1="227.33" y1="3.81" x2="227.33" y2="8.89" width="0.1016" layer="48"/>
+<wire x1="227.33" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="48"/>
+<wire x1="227.33" y1="8.89" x2="193.04" y2="8.89" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="8.89" x2="193.04" y2="3.81" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="8.89" x2="193.04" y2="13.97" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="13.97" x2="193.04" y2="19.05" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="48"/>
+<wire x1="193.04" y1="19.05" x2="193.04" y2="24.13" width="0.1016" layer="48"/>
+<text x="194.31" y="15.24" size="2.54" layer="48" font="vector">&gt;DRAWING_NAME</text>
+<text x="194.31" y="10.16" size="2.286" layer="48" font="vector">&gt;LAST_DATE_TIME</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="48"/>
+<text x="128.27" y="20.32" size="2.54" layer="48">Description:</text>
+<text x="194.31" y="20.32" size="2.54" layer="48">Author: Lukas Novak</text>
+<text x="194.31" y="5.08" size="2.54" layer="48">Sheet: 1/1</text>
+<text x="228.6" y="5.08" size="2.54" layer="48">Version:</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -514,7 +547,9 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="D1" library="diode" package="R1206" value="1N4148-1206" x="46.99" y="6.35" rot="MR0"/>
-<element name="K1" library="relay" package="F4052" value="FINDER 40.52.9.024.0000" x="46.99" y="7.62" rot="R90"/>
+<element name="K1" library="relay" package="F4052" value="FINDER 40.52.9.024.0000" x="46.99" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.1892" y="33.1946" size="1.778" layer="25" ratio="10" rot="R180"/>
+</element>
 <element name="R2" library="rcl" package="R1206" value="10k" x="11.43" y="42.545" rot="MR180"/>
 <element name="R3" library="rcl" package="R1206" value="10k" x="17.78" y="42.545" rot="MR180"/>
 <element name="R4" library="rcl" package="R1206" value="10k" x="24.13" y="42.545" rot="MR180"/>
@@ -523,27 +558,73 @@ design rules under a new name.</description>
 <element name="R7" library="rcl" package="R1206" value="2k2" x="7.9375" y="34.925" rot="MR135"/>
 <element name="R8" library="rcl" package="R1206" value="2k2" x="12.7" y="37.1475" rot="MR135"/>
 <element name="R9" library="rcl" package="R1206" value="2k2" x="10.4775" y="32.385" rot="MR135"/>
-<element name="X1" library="con-molex" package="22-23-2041" value="22-23-2041" x="17.78" y="31.75" rot="R270"/>
-<element name="X10" library="con-malina" package="WAGO236-401_2" value="WAGO236-401/2" x="62.23" y="19.05" rot="R90"/>
-<element name="X11" library="con-molex" package="22-23-2041" value="22-23-2041" x="30.48" y="17.78" rot="R270"/>
-<element name="X12" library="con-molex" package="22-23-2041" value="22-23-2041" x="30.48" y="31.75" rot="R270"/>
-<element name="X13" library="con-molex" package="22-23-2021" value="22-23-2021" x="25.4" y="5.08"/>
-<element name="X14" library="con-molex" package="22-23-2021" value="22-23-2021" x="16.51" y="5.08"/>
-<element name="X2" library="con-molex" package="22-23-2041" value="22-23-2041" x="17.78" y="17.78" rot="R270"/>
-<element name="X3" library="con-molex" package="22-23-2041" value="22-23-2041" x="3.81" y="17.78" rot="R270"/>
-<element name="X4" library="con-molex" package="22-23-2041" value="22-23-2041" x="3.81" y="31.75" rot="R270"/>
-<element name="X5" library="con-molex" package="22-23-2021" value="22-23-2021" x="13.97" y="45.72" rot="R180"/>
-<element name="X6" library="con-molex" package="22-23-2021" value="22-23-2021" x="20.32" y="45.72" rot="R180"/>
-<element name="X7" library="con-molex" package="22-23-2021" value="22-23-2021" x="26.67" y="45.72" rot="R180"/>
-<element name="X8" library="con-molex" package="22-23-2021" value="22-23-2021" x="33.02" y="45.72" rot="R180"/>
-<element name="X9" library="con-malina" package="WAGO236-401_2" value="WAGO236-401/2" x="62.23" y="33.02" rot="R90"/>
+<element name="X1" library="con-molex" package="22-23-2041" value="Supply" x="17.78" y="31.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.59" y="36.83" size="1.016" layer="25" ratio="14" rot="R270"/>
+<attribute name="VALUE" x="12.7" y="36.83" size="1.016" layer="27" ratio="14" rot="R270"/>
+</element>
+<element name="X10" library="con-malina" package="WAGO236-401_2" value="High Voltage Supply - N" x="62.23" y="19.05" smashed="yes" rot="R90">
+<attribute name="VALUE" x="71.648" y="25.069" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="64.052" y="14.829" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="X11" library="con-molex" package="22-23-2041" value="BronkHorst - A" x="30.48" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.29" y="22.86" size="1.016" layer="25" ratio="14" rot="R270"/>
+<attribute name="VALUE" x="25.4" y="22.86" size="1.016" layer="27" ratio="14" rot="R270"/>
+</element>
+<element name="X12" library="con-molex" package="22-23-2041" value="BronkHorst - B" x="30.48" y="31.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.29" y="36.83" size="1.016" layer="25" ratio="14" rot="R270"/>
+<attribute name="VALUE" x="25.4" y="36.83" size="1.016" layer="27" ratio="14" rot="R270"/>
+</element>
+<element name="X13" library="con-molex" package="22-23-2021" value="El.Mag - A" x="25.4" y="5.08" smashed="yes">
+<attribute name="NAME" x="22.86" y="8.89" size="1.016" layer="25" ratio="14"/>
+<attribute name="VALUE" x="22.86" y="0" size="1.016" layer="27" ratio="14"/>
+</element>
+<element name="X14" library="con-molex" package="22-23-2021" value="El.Mag - B" x="16.51" y="5.08" smashed="yes">
+<attribute name="NAME" x="13.97" y="8.89" size="1.016" layer="25" ratio="14"/>
+<attribute name="VALUE" x="13.97" y="0" size="1.016" layer="27" ratio="14"/>
+</element>
+<element name="X2" library="con-molex" package="22-23-2041" value="BronkHorst IN" x="17.78" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.59" y="22.86" size="1.016" layer="25" ratio="14" rot="R270"/>
+<attribute name="VALUE" x="12.7" y="22.86" size="1.016" layer="27" ratio="14" rot="R270"/>
+</element>
+<element name="X3" library="con-molex" package="22-23-2041" value="ROT-EM A a B" x="3.81" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="22.86" size="1.016" layer="25" ratio="14" rot="R270"/>
+<attribute name="VALUE" x="-1.27" y="22.86" size="1.016" layer="27" ratio="14" rot="R270"/>
+</element>
+<element name="X4" library="con-molex" package="22-23-2041" value="LED_IN" x="3.81" y="31.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="36.83" size="1.016" layer="25" ratio="14" rot="R270"/>
+<attribute name="VALUE" x="-1.27" y="36.83" size="1.016" layer="27" ratio="14" rot="R270"/>
+</element>
+<element name="X5" library="con-molex" package="22-23-2021" value="LED_OUT_1" x="13.97" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.51" y="41.91" size="1.016" layer="25" ratio="14" rot="R180"/>
+<attribute name="VALUE" x="11.69" y="56.8" size="1.016" layer="27" ratio="14"/>
+</element>
+<element name="X6" library="con-molex" package="22-23-2021" value="LED_OUT_2" x="20.32" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="22.86" y="41.91" size="1.016" layer="25" ratio="14" rot="R180"/>
+<attribute name="VALUE" x="17.84" y="54.7" size="1.016" layer="27" ratio="14"/>
+</element>
+<element name="X7" library="con-molex" package="22-23-2021" value="LED_OUT_3" x="26.67" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.21" y="41.91" size="1.016" layer="25" ratio="14" rot="R180"/>
+<attribute name="VALUE" x="24.19" y="52.9" size="1.016" layer="27" ratio="14"/>
+</element>
+<element name="X8" library="con-molex" package="22-23-2021" value="LED_OUT_4" x="33.02" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.56" y="41.91" size="1.016" layer="25" ratio="14" rot="R180"/>
+<attribute name="VALUE" x="30.44" y="51" size="1.016" layer="27" ratio="14"/>
+</element>
+<element name="X9" library="con-malina" package="WAGO236-401_2" value="High Voltage Supply - L" x="62.23" y="33.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="71.818" y="39.369" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="62.982" y="42.329" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
 <element name="PAD1" library="wirepad" package="SMD2-3" value="" x="27.305" y="13.97" rot="MR270"/>
 <element name="PAD2" library="wirepad" package="SMD2-3" value="" x="27.305" y="27.94" rot="MR270"/>
 <element name="PAD3" library="wirepad" package="SMD2-3" value="" x="14.605" y="27.94" rot="MR90"/>
 <element name="PAD4" library="wirepad" package="SMD2-3" value="" x="21.59" y="30.48" rot="MR270"/>
-<element name="X15" library="con-molex" package="22-23-2021" value="22-23-2021" x="34.29" y="5.08"/>
+<element name="X15" library="con-molex" package="22-23-2021" value="Rot Vyveva - Rele" x="34.29" y="5.08" smashed="yes">
+<attribute name="NAME" x="31.75" y="8.89" size="1.016" layer="25" ratio="14"/>
+<attribute name="VALUE" x="31.75" y="0" size="1.016" layer="27" ratio="14"/>
+</element>
 <element name="R1" library="rcl" package="R1206" value="10k" x="30.48" y="5.08" rot="MR90"/>
 <element name="R10" library="rcl" package="R1206" value="2k2" x="38.1" y="6.35" rot="MR270"/>
+<element name="U$2" library="frames" package="A4L-LOC" value="" x="-82.3" y="-75.8"/>
 </elements>
 <signals>
 <signal name="COMA_TX">

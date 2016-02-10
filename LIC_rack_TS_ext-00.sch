@@ -3119,18 +3119,18 @@ high speed (Philips)</description>
 </classes>
 <parts>
 <part name="U$1" library="frames" deviceset="FRAME_M1" device=""/>
-<part name="X1" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="X2" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="X3" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="X4" library="con-molex" deviceset="22-23-2041" device=""/>
+<part name="X1" library="con-molex" deviceset="22-23-2041" device="" value="Supply"/>
+<part name="X2" library="con-molex" deviceset="22-23-2041" device="" value="BronkHorst IN"/>
+<part name="X3" library="con-molex" deviceset="22-23-2041" device="" value="ROT-EM A a B"/>
+<part name="X4" library="con-molex" deviceset="22-23-2041" device="" value="LED_IN"/>
 <part name="P+1" library="supply1" deviceset="+24V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="X5" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="X6" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="X7" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="X8" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="X9" library="con-malina" deviceset="WAGO236-401/2" device=""/>
-<part name="X10" library="con-malina" deviceset="WAGO236-401/2" device=""/>
+<part name="X5" library="con-molex" deviceset="22-23-2021" device="" value="LED_OUT_1"/>
+<part name="X6" library="con-molex" deviceset="22-23-2021" device="" value="LED_OUT_2"/>
+<part name="X7" library="con-molex" deviceset="22-23-2021" device="" value="LED_OUT_3"/>
+<part name="X8" library="con-molex" deviceset="22-23-2021" device="" value="LED_OUT_4"/>
+<part name="X9" library="con-malina" deviceset="WAGO236-401/2" device="" value="High Voltage Supply - L"/>
+<part name="X10" library="con-malina" deviceset="WAGO236-401/2" device="" value="High Voltage Supply - N"/>
 <part name="K1" library="relay" deviceset="4052" device="" value="FINDER 40.52.9.024.0000"/>
 <part name="P+2" library="supply1" deviceset="+24V" device=""/>
 <part name="P+3" library="supply1" deviceset="+24V" device=""/>
@@ -3143,17 +3143,17 @@ high speed (Philips)</description>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R1206" value="2k2"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R1206" value="2k2"/>
 <part name="D1" library="diode" deviceset="1N4148" device="-1206"/>
-<part name="X13" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="X14" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="X13" library="con-molex" deviceset="22-23-2021" device="" value="El.Mag - A"/>
+<part name="X14" library="con-molex" deviceset="22-23-2021" device="" value="El.Mag - B"/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
-<part name="X11" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="X12" library="con-molex" deviceset="22-23-2041" device=""/>
+<part name="X11" library="con-molex" deviceset="22-23-2041" device="" value="BronkHorst - A"/>
+<part name="X12" library="con-molex" deviceset="22-23-2041" device="" value="BronkHorst - B"/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
 <part name="PAD1" library="wirepad" deviceset="SMD" device="-2X3"/>
 <part name="PAD2" library="wirepad" deviceset="SMD" device="-2X3"/>
 <part name="PAD3" library="wirepad" deviceset="SMD" device="-2X3"/>
 <part name="PAD4" library="wirepad" deviceset="SMD" device="-2X3"/>
-<part name="X15" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="X15" library="con-molex" deviceset="22-23-2021" device="" value="Rot Vyveva - Rele"/>
 <part name="P+6" library="supply1" deviceset="+24V" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="10k"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R1206" value="2k2"/>
